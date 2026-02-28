@@ -1,0 +1,10 @@
+#!name=Maimai Rival Inject
+#!desc=在国服舞萌DX网页中注入对手（Rival）按钮。
+#!category=Maimai
+
+[MITM]
+hostname = %APPEND% maimai.wahlap.com
+
+[Script]
+# 请将下方的 script-path 链接替换为你实际存放 JS 脚本的直链
+Maimai_Rival = type=http-response, pattern=^https:\/\/maimai\.wahlap\.com\/maimai-mobile\/friend\/.*, requires-body=1, script-path=https://raw.githubusercontent.com/kuukitora/tools/main/QX/maimai_rival_inject.js
