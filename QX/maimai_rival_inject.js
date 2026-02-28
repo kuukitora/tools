@@ -27,8 +27,6 @@ buttonGroups.forEach((group) => {
     rivalOn.querySelector('img').setAttribute('src', rivalOnImg);
     stack.appendChild(rivalOn);
     
-    stack.appendChild(document.createElement('br'));
-    
     const rivalOff = favoriteButton.cloneNode(true);
     rivalOff.setAttribute('action', 'https://maimai.wahlap.com/maimai-mobile/friend/rivalOff/');
     rivalOff.querySelector('img').setAttribute('src', rivalOffImg);
